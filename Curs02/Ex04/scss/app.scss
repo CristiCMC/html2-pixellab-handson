@@ -4,6 +4,10 @@
   margin: 16px 0;
 }
 
+.box-2 {
+  border: 2px solid #000;
+}
+
 .box {
   width: 150px;
   height: 150px;
@@ -21,6 +25,14 @@
   .box-#{$i}0 {
     @if $i % 2 != 0 {
       background-color: grey;
+    }
+  }
+}
+
+@for $i from 1 through 5 {
+  .box-#{$i}0 {
+    @if $i + 1 >= 1 {
+      border: 2px solid #000;
     }
   }
 }
