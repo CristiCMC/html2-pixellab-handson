@@ -13,8 +13,14 @@ body {
     /* translate(x, y) */
     transform: translate(0, calc(100vh - 100px));
   }
-  66.6% {
+  55.5% {
     transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+  }
+  66.6% {
+    transform: translate(calc(100vw - 100px), 0);
+  }
+  88.8% {
+    transform: translate(0, calc(100vw - 100vh));
   }
   100% {
     transform: translate(0, 0);

@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  display: flex;
+  gap: 4px;
+  background-color: black;
+}
+
+.circle > div {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  animation: bounce 3s ease-in-out;
+}
