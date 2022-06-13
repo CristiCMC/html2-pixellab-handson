@@ -17,15 +17,101 @@
     rel="stylesheet"
     href="https://pixellab.ro/js/pixeltab/static/js/pixeltab.css"
   >
+
+  <!-- CSS only -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous"
+  >
 </head>
 
 <body>
+  <header class="container mb-4">
+    <h1 class="text-center text-lg-start">Formular Produs</h1>
+  </header>
 
-  <div
+  <main class="container mb-5">
+    <fieldset>
+      <header>
+        <h2>Produs</h2>
+      </header>
+
+      <form>
+        <div class="col-12 col-lg-6 mt-2 mb-5 mt-lg-0">
+          <div class="mb-2">
+            <label
+              for="recipe-image"
+              class="form-label d-block"
+            >Imagine principala *</label>
+
+            <input
+              type="file"
+              name="recipe-image"
+              id="recipe-image"
+              class="form-control"
+              required
+            >
+          </div>
+
+          <div class="col-12 col-lg-6 mb-2 mb-lg-0 d-flex flex-column gap-2">
+            <div class="input-group">
+              <label
+                for="author-name"
+                class="input-group-text"
+              >Numele autorului *</label>
+
+              <input
+                type="text"
+                name="author-name"
+                id="author-name"
+                class="form-control"
+                placeholder="Numele autorului *"
+                required
+              >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="author-surname"
+                class="input-group-text"
+              >Prenumele autorului *</label>
+
+              <input
+                type="text"
+                name="author-surname"
+                id="author-surname"
+                placeholder="Prenumele autorului *"
+                class="form-control"
+                required
+              >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="author-email"
+                class="input-group-text"
+              >Email *</label>
+
+              <input
+                type="email"
+                name="author-email"
+                id="author-email"
+                class="form-control"
+                placeholder="Email *"
+                required
+              >
+            </div>
+          </div>
+      </form>
+    </fieldset>
+  </main>
+  <!-- <div
     class="pixeltab-host"
     id="html02-05-14"
   ></div>
-  <script src="https://pixellab.ro/js/pixeltab/static/js/pixeltab.js"></script>
+  <script src="https://pixellab.ro/js/pixeltab/static/js/pixeltab.js"></script> -->
 </body>
 
 </html>
